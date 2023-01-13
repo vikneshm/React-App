@@ -7,10 +7,16 @@ module.exports = {
     },
     devServer: {
         port: 8080,
-        static: path.resolve(__dirname, 'dist')
+        static: path.resolve(__dirname, 'dist'),
+        historyApiFallback: true
     },
+    mode: 'development',
     module: {
         rules: [
+            {
+                test: /\.(png|jpg|jpeg|svg)$/,
+                use: ['file-loader']
+            },
             {
                 test: /\.css$/,
                 use: ['style-loader', 'css-loader']
