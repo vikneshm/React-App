@@ -3,7 +3,7 @@ import folderlogo from '../images/folder.png'
 import '../Styles/explorer.css'
 import file from '../images/file.png'
 
-const Explorer = ({explore}) => {
+const Explorer = ({ handleInsert, explore }) => {
     console.log(explore)
     const [showcontent, setShowcontent] = useState(false)
     const [showInput, setShowInPut] = useState(
@@ -20,7 +20,14 @@ const Explorer = ({explore}) => {
             isFolder
         })
     }
-console.log(showInput)
+    console.log(showInput)
+    const onAddFolder = (e) => {
+        if(e.keyCode === 13 && e.target.value){
+            handleInsert(explore.id,e.target.value,showInput.isFolder)
+            setShowInPut({...showInput, visible: false})
+        }
+    }
+
     if(explore.isFolder){
         return(
             <div>   
@@ -42,12 +49,13 @@ console.log(showInput)
                             onBlur={()=>{setShowInPut({...showInput, visible:false})}}
                             type='text'
                             className='input-box'
+                            onKeyDown={onAddFolder}
                             autoFocus ></input>
                         </div>
                     )
                 }
                 <div style={{display : showcontent?'block':'none',paddingLeft: 25}}>
-                    {explore.items.map((item)=>{return(<Explorer explore={item} key={item.id}/>)})}
+                    {explore.items.map((item)=>{return(<Explorer handleInsert={handleInsert} explore={item} key={item.id}/>)})}
                 </div>               
             </div>
         )
