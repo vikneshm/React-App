@@ -1,0 +1,17 @@
+.todo-content {
+    width: 100%;
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: #f0f0f0;    
+}
+
+label {
+    margin-left: 0.5rem;
+}
+
+.container-scroll {
+    overflow-y: scroll;
+    height: 80%;
+}

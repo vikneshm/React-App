@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+}
+
+.container-outer {
+    background-color: #f5f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+}
+
+.container-inner {
+    margin: 0 auto;
+    width: 40%;
+    height: 90%;
+    background-color: white;
+    padding: 0 1rem;
+    text-align: center;
+    box-shadow: 0 0 0.5rem 0.1rem  #8aa1a1;
+}
+
+.container-form {
+    margin-top: 1rem;
+}
+
+.container-title {
+    font-size: 1.2rem;
+    background-color:  #2e5cb8;
+    color: white;
+    padding: 0.5rem;
+    box-shadow: 0 0 3px 1px gray;
+}
+
+.todo-input {
+    outline: none;
+    border: 1px solid gray;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    width: 70%
+}
