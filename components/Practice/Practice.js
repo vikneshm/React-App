@@ -1,5 +1,5 @@
 import React, { useReducer, useEffect, useState, useRef } from "react"
-import '../Styles/Practice.css'
+import '../../assets/Styles/Practice.css'
 
 const ACTION = {
     INPUT_ENTERED: 'INPUT_ENTERED',

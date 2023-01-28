@@ -1,6 +1,6 @@
 import React from 'react'
 import {ACTION} from './Todolist.js'
-import '../Styles/Todo.css'
+import '../../assets/Styles/Todo.css'
 
 const Todo = ({todo,dispatch}) => {
     console.log("todo handle",todo)

@@ -8,7 +8,8 @@ module.exports = {
     devServer: {
         port: 8080,
         static: path.resolve(__dirname, 'dist'),
-        historyApiFallback: true
+        historyApiFallback: true,
+        hot: true
     },
     mode: 'development',
     module: {

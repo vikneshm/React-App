@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import folderlogo from '../images/folder.png'
-import '../Styles/explorer.css'
-import file from '../images/file.png'
+import folderlogo from '../../assets/images/folder.png'
+import '../../assets/Styles/explorer.css'
+import file from '../../assets/images/file.png'
 
 const Explorer = ({ handleInsert, explore }) => {
     console.log(explore)

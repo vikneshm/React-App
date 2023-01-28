@@ -1,6 +1,6 @@
 import React, { useReducer, useState } from "react"
 import Todo from './Todo.js'
-import '../Styles/Todolist.css'
+import '../../assets/Styles/Todolist.css'
 
 export const ACTION = {
     NEW_TODO: 'new_todo',
