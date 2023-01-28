@@ -1,0 +1,94 @@
+*{
+    box-sizing: border-box;
+}
+
+.our-form {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.question {
+    font-size: 5rem;
+    margin-bottom: 1rem;
+}
+
+.outer-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+.our-field {
+    padding: 0.2rem;
+    margin-right: 1rem;
+}
+
+.our-button {
+    background-color: yellow;
+    padding: 0.4rem;
+    border: none;
+    border-radius: 2px;
+    margin-right: 0.3rem;
+}
+
+.point-status {
+    margin-bottom: 2rem;
+}
+
+.progress-box {
+    display: flex;
+    width: 100%;
+    position: relative
+}
+
+.boxes {
+    display: flex;
+    border: 1px solid grey;
+    width: 100%;
+    border-right: none;
+}
+
+.progress-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #7ecc00;
+    opacity: 0.5;
+    transform: scaleX(0);
+    transform-origin: center left;
+    transition: all 0.3s ease-out;
+}
+
+.box {
+    border-right: 1px solid grey;
+    height: 3rem;
+    flex: 1;
+}
+
+@keyframes showerror {
+    50% {
+        color: red;
+        transform: scale(1.2);
+    }
+    100% {
+        color: black;
+        transform: scale(1);
+    }
+}
+
+.anime-wrong {
+    animation: 0.5s showerror;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.warning {
+    margin-bottom: 1rem;
+    display: inline-block;
+}
